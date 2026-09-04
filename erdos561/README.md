@@ -1,14 +1,21 @@
 # Erdős problem 561: current research package
 
+| Read | Status |
+| --- | --- |
+| [Submitted version 1 PDF](submitted/v1/manuscript.pdf) · [LaTeX source](submitted/v1/manuscript.tex) | Preserved byte-for-byte; submitted as a partial result |
+| [Submission record and checksum](submitted/v1/submission.md) | Awaiting moderator approval when submitted on 4 September 2026 |
+| [Follow-up proof overview](followup_summary.md) | Subsequent research, separate from submitted version 1; ready for human review |
+| [Literature and novelty audit](novelty_audit.md) | Prior results credited; priority of additional results remains unconfirmed |
+
 This task now concerns **only problem 561**, the size Ramsey number of two star forests. The full conjecture has not been solved. The current candidate contribution is a general local criterion with complete proofs, not the earlier finite search.
 
 ## Current theorem
 
 For nonincreasing positive sequences A and B, put
 
-\[
+$$
 \ell_k=\max_{i+j=k}(a_i+b_j-1).
-\]
+$$
 
 The conjectured sum is exact if every nonfinal diagonal either has a maximizing pair with both sizes odd or one size equal to 1, or has one of the local gaps specified in Theorem 1 of the manuscript. In particular, a drop of at least 3 suffices at each diagonal lacking such a maximizing pair. A drop of 2 also suffices when the next diagonal has the required separation. The final diagonal has no restriction.
 
@@ -16,10 +23,10 @@ The simultaneous-suffix framework and parity-based deficit bound were already po
 
 The method permits arbitrary numbers of components and long repeated runs of star sizes. One consequence is
 
-\[
+$$
 \widehat r(K_{1,6}\sqcup rK_{1,3}\sqcup mK_2,\ K_{1,5}\sqcup K_2)
 =11+7r+5m\qquad(r,m\ge1).
-\]
+$$
 
 Corollary 8 gives families with any number h of even components. The exact value exceeds the direct lower bound from rounding those components down and applying the published all-odd theorem by h. This comparison is with that specific prior bound, not a claim to have computed the strongest consequence of every earlier paper.
 
@@ -48,3 +55,13 @@ Corollary 8 gives families with any number h of even components. The exact value
 - [Mixed two-edge-star forests](improvement_plateaus.md): a complete proof that the size Ramsey number of sP3 plus r isolated edges versus tP3 is 3(s+t−1)+2r, for s,t≥1 and r≥0. This handles long repeated bad diagonals.
 
 These follow-up results were developed after the user's review of version 1. They require their own human review before a further site submission. Their novelty remains qualified by the literature-access gaps described above.
+
+## Versioned links
+
+The `submitted/v1/` directory preserves the PDF actually submitted, its source, and the submission record. New submitted revisions belong in new version directories. The existing `output/pdf/manuscript.pdf` and research-note paths remain available for existing links.
+
+For an exact archival citation, use a GitHub commit permalink to `submitted/v1/manuscript.pdf`. The submitted PDF's SHA-256 is:
+
+```text
+a4b2f50e831b3a3d29f3fde859d73561a2023170192d67a2636850d6e4049188
+```

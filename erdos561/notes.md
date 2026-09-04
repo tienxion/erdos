@@ -8,9 +8,9 @@ For a nonincreasing positive-integer sequence A=(a_1,...,a_s), write F(A) for th
 
 [Erdős problem 561](https://www.erdosproblems.com/561) asks whether
 
-\[
+$$
 \widehat r(F(A),F(B))=\sum_{k=2}^{s+t}\max_{i+j=k}(a_i+b_j-1).
-\]
+$$
 
 The catalogue available during this investigation lists it as open. Literature checking matters here: [Fu, Luo and Ni, arXiv:2606.04439v1](https://arxiv.org/html/2606.04439v1), dated 3 June 2026, claimed the general result. The next version removed that claim. The [current v3 record](https://arxiv.org/abs/2606.04439), revised 4 July 2026, concerns **uniform** star forests; v2 explicitly calls the general conjecture open. Search-engine abstracts were still returning the obsolete full-solution claim.
 
@@ -26,10 +26,10 @@ The valid deletion implication drops the **largest** star instead: colour every 
 
 For all positive integers a≥b≥1 and c≥d≥1,
 
-\[
+$$
 \widehat r(K_{1,a}\sqcup K_{1,b},K_{1,c}\sqcup K_{1,d})
 =(a+c-1)+\max(a+d-1,b+c-1)+(b+d-1).
-\]
+$$
 
 This is a full proof of a special case of problem 561, not a solution for arbitrary star forests. Its novelty has not been established. The argument, including the single-edge components and exceptional small cases, was independently checked by another research agent and reviewed by the coordinating agent.
 
@@ -46,9 +46,9 @@ All hosts are finite simple graphs. Isolated vertices can be removed whenever co
 
 If G arrows (K_(1,a) disjoint union K_(1,b), K_(1,c) disjoint union K_(1,d)), then, for any vertex v,
 
-\[
+$$
 G-v\longrightarrow(K_{1,a}\sqcup K_{1,b},K_{1,d}). \tag{1}
-\]
+$$
 
 To prove this, colour G−v avoiding the displayed pair and colour every edge incident with v blue. No red target is created. A blue copy of the original target would leave at least one whole component in G−v; either component contains K_(1,d), a contradiction. Interchanging colours gives the other deletion implication.
 
@@ -60,9 +60,9 @@ We will repeatedly use the following observation. If a graph of maximum degree a
 
 For any positive integers a_1,...,a_s,d, let F be the disjoint union of K_(1,a_i). Then
 
-\[
+$$
 \widehat r(F,K_{1,d})=\sum_{i=1}^s a_i+s(d-1).
-\]
+$$
 
 This follows from the matching-deletion argument in DJKR; the size argument itself does not require a_i≥2, although their equality classification does.
 
@@ -70,23 +70,23 @@ For the upper bound, take disjoint stars of sizes a_i+d−1. Unless one contains
 
 For the lower bound, induct on d. When d=1, colouring all edges red shows that a Ramsey host H must contain F and has at least the displayed number of edges. For d≥2, take a maximum matching M in a Ramsey host H. Since H contains F, we have |M|≥s. Moreover,
 
-\[
+$$
 H-M\longrightarrow(F,K_{1,d-1}).
-\]
+$$
 
 Otherwise extend an avoiding colouring of H−M by colouring M blue. No red F is created. Every blue K_(1,d) would lose at most one edge on removal of the matching and would leave a blue K_(1,d−1), a contradiction. The induction hypothesis now gives
 
-\[
+$$
 e(H)\ge |M|+e(H-M)
 \ge s+\sum_i a_i+s(d-2)
 =\sum_i a_i+s(d-1).
-\]
+$$
 
 In particular, for a,d≥1,
 
-\[
+$$
 \widehat r(K_{1,a}\sqcup K_2,K_{1,d})=a+2d-1. \tag{2}
-\]
+$$
 
 When d=1 an equality host for (F,K_2) is exactly F, apart from isolated vertices, because it contains F and has exactly e(F) edges.
 
@@ -100,21 +100,21 @@ The first star contains a red K_(1,a) or a blue K_(1,c). In the first case, if e
 
 Interchange the colours if needed so that a−b≥c−d. Then
 
-\[
+$$
 S=2a+b+c+2d-3.
-\]
+$$
 
 Suppose G is a Ramsey host with e(G)<S. Let D=Δ(G), choose a vertex v of degree D, and put H=G−v. Vizing gives D≥a+c−2. Equation (1), the one-star formula from DJKR when b≥2, equation (2) when b=1 and d≥2, and the trivial d=1 case give
 
-\[
+$$
 e(H)\ge a+b+2d-2.
-\]
+$$
 
 Hence e(G)≥S−1. Integrality and the assumed strict inequality force
 
-\[
+$$
 e(G)=S-1,\quad D=a+c-2,\quad e(H)=a+b+2d-2. \tag{3}
-\]
+$$
 
 ### Case 1: b,d≥2
 
@@ -136,15 +136,15 @@ When D=2, we have a=c=2. The gap inequality forces b=1, so both targets are K_(1
 
 If a−1=c−d, interchange the colours so that the new d is 1 and Case 2 applies. Thus assume
 
-\[
+$$
 a-1>c-d,\qquad a\ge2.
-\]
+$$
 
 Now e(H)=a+2d−1 and H arrows (K_(1,a) disjoint union K_2,K_(1,d)). Put r=Δ(H) and take a maximum-degree vertex w. The deletion facts and Vizing give
 
-\[
+$$
 a+d-2\le r\le a+d-1.
-\]
+$$
 
 If r=a+d−2, the graph H−w consists of a copy of K_(1,d), one further edge, and isolated vertices. Every vertex except w and that star's centre has degree at most 3 in H. If r≥4, its maximum-degree core is a forest, which contradicts the Ramsey property of H. Therefore this smaller-degree case can occur only when (a,d) is (2,2), (2,3), or (3,2). Those exceptions are treated below.
 
@@ -152,9 +152,9 @@ Consider the larger-degree case r=a+d−1. Then H−w is exactly K_(1,d) plus is
 
 If c=d+1, then r=D, so v cannot be adjacent to w. If c≥d+2, then
 
-\[
+$$
 d_G(x)\le d+2<a+c-2=D.
-\]
+$$
 
 In both situations the triangle is impossible. Fournier again contradicts the Ramsey property of G.
 

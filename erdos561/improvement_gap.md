@@ -1,6 +1,6 @@
 # A matching extension at a drop of two
 
-Research draft, 4 September 2026. This extends the local sufficient criterion in `manuscript.tex`. The simultaneous suffix framework and the good-diagonal degree bound originate in [rickyc's 6 August 2026 forum comment](https://www.erdosproblems.com/forum/thread/561#post-8384). This note adds an elementary matching argument in the maximum-degree core; it does not solve the general conjecture.
+Research draft, 4 September 2026. This extends the local sufficient criterion in [the submitted manuscript](submitted/v1/manuscript.tex). The simultaneous suffix framework and the good-diagonal degree bound originate in [rickyc's 6 August 2026 forum comment](https://www.erdosproblems.com/forum/thread/561#post-8384). This note adds an elementary matching argument in the maximum-degree core; it does not solve the general conjecture.
 
 ## 1. An elementary matching lemma
 
@@ -22,15 +22,15 @@ Use the notation ell_k, S_k and the simultaneous suffix requirements P_k from th
 
 Suppose ell_k-ell_(k+1)=2 and G satisfies P_k with fewer than S_k edges. The existing degree/deletion argument forces
 
-\[
+$$
 e(G)=S_k-1,\qquad D=\Delta(G)=\ell_k-1.
-\]
+$$
 
 For **every** maximum-degree vertex x, the graph G-x has exactly S_(k+1) edges and satisfies P_(k+1). Therefore
 
-\[
+$$
 \Delta(G-x)\le\ell_{k+1}=D-1.
-\]
+$$
 
 Every other degree-D vertex must consequently be adjacent to x. Since x was arbitrary, the degree-D vertices of G form a clique. This conclusion uses no condition at all on the drop after ell_(k+1).
 
@@ -50,23 +50,23 @@ Thus a bad drop of two from an even maximum can now be followed by either a plat
 
 For every integer r at least 2, let
 
-\[
+$$
 F_r=K_{1,3}\sqcup rK_2,\qquad
 H_r=K_{1,5}\sqcup(r+1)K_{1,2}.
-\]
+$$
 
 Their diagonal maxima are
 
-\[
+$$
 7,\quad\underbrace{5,\ldots,5}_{r\text{ copies}},\quad
 4,\quad\underbrace{2,\ldots,2}_{r\text{ copies}}.
-\]
+$$
 
 The first diagonal is good because its maximizing pair is (3,5). The value-5 diagonals have a maximizing pair (1,5), and the value-2 diagonals have a maximizing pair (1,2), so they too are good. The unique bad diagonal has value 4, attained by (3,2). It drops by two into a plateau of twos, satisfying the new alternative. Therefore
 
-\[
+$$
 \boxed{\widehat r(F_r,H_r)=11+7r.}
-\]
+$$
 
 The old local criterion fails at the value 4 for every r at least 2. The good/bad deficit bound gives only 10+7r. The new matching argument recovers that one missing edge. This establishes a strict improvement over those two stated criteria; priority over other literature remains to be checked.
 
@@ -76,12 +76,12 @@ It is not valid to replace the matching argument by the assertion that a graph w
 
 ## 6. Compatibility with the recursive lower bound
 
-The same improvement applies to `improvement_recursive.md`. Add an extra recovery test
+The same improvement applies to [the recursive lower bound](improvement_recursive.md). Add an extra recovery test
 
-\[
+$$
 \ell_k-d_{k+1}=2
 \quad\text{and }\ell_k\text{ is even}.
-\]
+$$
 
 When this test holds, set d_k=ell_k. The hypothetical deficient host has odd D=ell_k-1, and deletion at any maximum-degree vertex yields an equality host for the recursively computed next lower bound, with maximum degree at most d_(k+1)=D-1. The same complete-core, matching, and even-factor splitting argument applies. No attainability of the recursive lower bound is assumed.
 
@@ -122,16 +122,16 @@ This argument also applies to recursive budgets: require ell_k even, ell_k-d_(k+
 
 For example, take h,u at least 1,
 
-\[
+$$
 A=(2h+2,2h,\ldots,4,3,1^u),\qquad B=(5,1).
-\]
+$$
 
 The maxima are (2h+6,2h+4,...,8,7,5^u,1). The last bad value 8 drops by one to 7, followed by a drop of two, so the new rule recovers it. Every preceding even bad value drops by two and is recovered by Section 3. Thus
 
-\[
+$$
 \widehat r(F(A),K_{1,5}\sqcup K_2)
 =h^2+7h+5u+8.
-\]
+$$
 
 The previous recursive estimate for this family left one edge of uncertainty. This identity closes that gap when the component of size 3 occurs once.
 
@@ -143,9 +143,9 @@ The previous recursive estimate for this family left one edge of uncertainty. Th
 
 As a concrete example requiring the following-drop-one strengthening, for r at least 1 take A=(7^r,4,3,2), B=(5,1). The maxima are 11^r,8,7,6,2. The value 8 drops by one to 7, which again drops by one. All other bad values satisfy an earlier checked rule. The resulting formula is
 
-\[
+$$
 \widehat r(rK_{1,7}\sqcup K_{1,4}\sqcup K_{1,3}\sqcup K_{1,2},
            K_{1,5}\sqcup K_2)=11r+23.
-\]
+$$
 
 This last displayed family has an initial plateau of good values, so it follows directly from the full local criterion rather than the strict-decrease corollary itself.
