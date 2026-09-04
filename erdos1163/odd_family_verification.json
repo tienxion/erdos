@@ -1,0 +1,112 @@
+{
+  "checks": [
+    "Enumerated all 6 subgroups of S_3; G_3 v_2-order histogram = [0, 1, 0, 0].",
+    "Enumerated all 156 subgroups of S_5; G_5 v_2-order histogram = [0, 10, 10, 0, 0, 0]."
+  ],
+  "odd_ratios": [
+    {
+      "n": 5,
+      "G_over_F": 0.4,
+      "prediction": 0.408248290463863,
+      "ratio_to_prediction": 0.9797958971132713
+    },
+    {
+      "n": 9,
+      "G_over_F": 0.5208845208845209,
+      "prediction": 0.5773502691896257,
+      "ratio_to_prediction": 0.9021984550481621
+    },
+    {
+      "n": 17,
+      "G_over_F": 0.732554039615531,
+      "prediction": 0.816496580927726,
+      "ratio_to_prediction": 0.8971918030363125
+    },
+    {
+      "n": 33,
+      "G_over_F": 1.052726724390829,
+      "prediction": 1.1547005383792515,
+      "ratio_to_prediction": 0.9116880865652371
+    },
+    {
+      "n": 65,
+      "G_over_F": 1.5244259804295635,
+      "prediction": 1.632993161855452,
+      "ratio_to_prediction": 0.9335164506736013
+    },
+    {
+      "n": 129,
+      "G_over_F": 2.196319154162699,
+      "prediction": 2.309401076758503,
+      "ratio_to_prediction": 0.9510340911616241
+    },
+    {
+      "n": 257,
+      "G_over_F": 3.149515003307555,
+      "prediction": 3.265986323710904,
+      "ratio_to_prediction": 0.964338086917948
+    }
+  ],
+  "coefficient_ratios": [
+    {
+      "N": 32,
+      "w": 1,
+      "exact_over_asymptotic": 1.1507110995524465
+    },
+    {
+      "N": 32,
+      "w": 4,
+      "exact_over_asymptotic": 1.05000127928012
+    },
+    {
+      "N": 64,
+      "w": 1,
+      "exact_over_asymptotic": 1.1093289411006668
+    },
+    {
+      "N": 64,
+      "w": 4,
+      "exact_over_asymptotic": 1.0372403706167226
+    },
+    {
+      "N": 128,
+      "w": 1,
+      "exact_over_asymptotic": 1.078579071575929
+    },
+    {
+      "N": 128,
+      "w": 4,
+      "exact_over_asymptotic": 1.0275262837874977
+    },
+    {
+      "N": 256,
+      "w": 1,
+      "exact_over_asymptotic": 1.056155546902298
+    },
+    {
+      "N": 256,
+      "w": 4,
+      "exact_over_asymptotic": 1.0200742241111862
+    },
+    {
+      "N": 512,
+      "w": 1,
+      "exact_over_asymptotic": 1.0399866832960687
+    },
+    {
+      "N": 512,
+      "w": 4,
+      "exact_over_asymptotic": 1.0144982037786405
+    },
+    {
+      "N": 1024,
+      "w": 1,
+      "exact_over_asymptotic": 1.0284077449070437
+    },
+    {
+      "N": 1024,
+      "w": 4,
+      "exact_over_asymptotic": 1.010402807774126
+    }
+  ]
+}

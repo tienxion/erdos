@@ -1,0 +1,167 @@
+{
+  "local_group": {
+    "group_order": 32,
+    "center_order": 2,
+    "derived_order": 2,
+    "binary_quotient_rank": 4,
+    "normalizer_order": 384,
+    "conjugate_count": 105
+  },
+  "subdirect_checks": [
+    {
+      "a": 0,
+      "b": 0,
+      "c": 1,
+      "rank_counts": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "c": 1,
+      "rank_counts": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        1
+      ]
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "c": 1,
+      "rank_counts": [
+        0,
+        0,
+        0,
+        0,
+        225,
+        46,
+        1
+      ]
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "c": 1,
+      "rank_counts": [
+        0,
+        0,
+        0,
+        0,
+        210,
+        45,
+        1
+      ]
+    }
+  ],
+  "exact_family": [
+    {
+      "n": 8,
+      "total": 28595,
+      "surjectivity_fraction": 0.26508760545100585,
+      "mean_log2_order": 3.533659730722154,
+      "variance_log2_order": 0.8437262636537831
+    },
+    {
+      "n": 16,
+      "total": 943084023731850,
+      "surjectivity_fraction": 0.4015211573774423,
+      "mean_log2_order": 6.535711302775262,
+      "variance_log2_order": 1.261780717597697
+    },
+    {
+      "n": 24,
+      "total": 165645911787007053835536953850,
+      "surjectivity_fraction": 0.6558513877376403,
+      "mean_log2_order": 9.46915785482966,
+      "variance_log2_order": 1.5595724498012324
+    },
+    {
+      "n": 32,
+      "total": 47867434793638287253309281610399510627019966250,
+      "surjectivity_fraction": 0.8533692016128782,
+      "mean_log2_order": 12.475249339659483,
+      "variance_log2_order": 1.8115242738965054
+    },
+    {
+      "n": 48,
+      "total": 4260818359826384545500081630495445641633392739516968966551438643904562208461368951539906250,
+      "surjectivity_fraction": 0.9834103068838906,
+      "mean_log2_order": 18.64829235855916,
+      "variance_log2_order": 2.1962026000275903
+    },
+    {
+      "n": 64,
+      "total": 123198037648074632177648930173795123072439939878105320567878981498686438069999209306033573323876292637905766328747359141979385864407104873786406250,
+      "surjectivity_fraction": 0.9985204758774447,
+      "mean_log2_order": 24.86282546639317,
+      "variance_log2_order": 2.505424347871982
+    }
+  ],
+  "asymptotic_checks": [
+    {
+      "N": 64,
+      "coefficient_over_saddle": 0.9927212530344302,
+      "mean_minus_center_over_scale": 0.013133349988860977,
+      "variance_over_scale_squared": 1.0973262698753126,
+      "odd_family_ratio": 1.051264129964263,
+      "odd_family_ratio_over_prediction": 1.009653654674178
+    },
+    {
+      "N": 128,
+      "coefficient_over_saddle": 0.9956539670109417,
+      "mean_minus_center_over_scale": 0.008841329982776964,
+      "variance_over_scale_squared": 1.0708209451058348,
+      "odd_family_ratio": 1.3155200570832961,
+      "odd_family_ratio_over_prediction": 1.0055988433432468
+    },
+    {
+      "N": 256,
+      "coefficient_over_saddle": 0.9976254326634564,
+      "mean_minus_center_over_scale": 0.0058482821294726555,
+      "variance_over_scale_squared": 1.0557297864505923,
+      "odd_family_ratio": 1.6198649932440066,
+      "odd_family_ratio_over_prediction": 1.0029708793749157
+    },
+    {
+      "N": 512,
+      "coefficient_over_saddle": 0.9987623487678481,
+      "mean_minus_center_over_scale": 0.003780114862473954,
+      "variance_over_scale_squared": 1.0459905734655293,
+      "odd_family_ratio": 1.9733800978850848,
+      "odd_family_ratio_over_prediction": 1.0015067284568304
+    },
+    {
+      "N": 1024,
+      "coefficient_over_saddle": 0.9993688623010745,
+      "mean_minus_center_over_scale": 0.0023918314035307605,
+      "variance_over_scale_squared": 1.0389485579304016,
+      "odd_family_ratio": 2.3865158201097882,
+      "odd_family_ratio_over_prediction": 1.00075117045292
+    },
+    {
+      "N": 2048,
+      "coefficient_over_saddle": 0.9996810849573173,
+      "mean_minus_center_over_scale": 0.0014889195669419908,
+      "variance_over_scale_squared": 1.0334058237231076,
+      "odd_family_ratio": 2.871530346024709,
+      "odd_family_ratio_over_prediction": 1.0003732100095861
+    },
+    {
+      "N": 4096,
+      "coefficient_over_saddle": 0.9998395044591013,
+      "mean_minus_center_over_scale": 0.0009162311047497754,
+      "variance_over_scale_squared": 1.0287991843221014,
+      "odd_family_ratio": 3.442920849517455,
+      "odd_family_ratio_over_prediction": 1.0001855914006035
+    }
+  ]
+}

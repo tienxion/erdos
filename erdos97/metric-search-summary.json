@@ -1,0 +1,9 @@
+{
+  "status": "No proof or counterexample. Heuristic failure does not prove nonexistence.",
+  "classes": 400,
+  "starts_per_class": 2,
+  "maximum_function_evaluations_per_start": 250,
+  "retained_convex_nondegenerate_records": 52,
+  "best_class": 27,
+  "best_original_normalized_squared_distance_error": 0.0060142961910192305
+}

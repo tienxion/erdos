@@ -1,0 +1,324 @@
+{
+  "sylow_order": 128,
+  "sylow_derived_order": 16,
+  "sylow_nilpotency_class": 4,
+  "sylow_subgroup_conjugacy_classes": 177,
+  "transitive_bad_classes_checked": 34,
+  "efficient_classes_excluded": 1,
+  "quotients_checked": 470,
+  "class2_exponent4_quotients_checked": 448,
+  "all_bounds_passed": true,
+  "efficient_exclusion_verified_by_S8_conjugacy": true,
+  "efficient_model_generators": "[ (1,2)(3,4), (1,2)(5,6), (1,2)(7,8), (1,3)(2,4)(5,7)(6,8), (1,5)(2,6)(3,7)(4,8) ]",
+  "rows": [
+    {
+      "generators": "[ (1,5)(2,6)(3,7)(4,8), (1,2)(3,4)(5,8)(6,7), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 6,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,7,3,5)(2,8,4,6), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 8,
+      "class2_exponent4_quotients_tested": 8,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 8,
+      "rank": 3,
+      "normal_quotients_tested": 16,
+      "class2_exponent4_quotients_tested": 16,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,6,2,5)(3,8,4,7), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 8,
+      "class2_exponent4_quotients_tested": 8,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,8)(4,7), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 6,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,4,2,3)(5,8,6,7) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 8,
+      "class2_exponent4_quotients_tested": 8,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,8)(4,7), (1,4,2,3)(5,8,6,7) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 6,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,6,2,5)(3,7,4,8), (1,4,2,3)(5,8,6,7) ]",
+      "order": 8,
+      "rank": 2,
+      "normal_quotients_tested": 6,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,8,4,6,2,7,3,5), (1,4,2,3)(5,8,6,7) ]",
+      "order": 8,
+      "rank": 1,
+      "normal_quotients_tested": 4,
+      "class2_exponent4_quotients_tested": 3,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 1
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,6,2,5)(3,7,4,8), (3,4)(5,7)(6,8), (1,4,2,3)(5,8,6,7) ]",
+      "order": 16,
+      "rank": 2,
+      "normal_quotients_tested": 7,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,4,2,3)(5,8,6,7), (5,6)(7,8) ]",
+      "order": 16,
+      "rank": 3,
+      "normal_quotients_tested": 17,
+      "class2_exponent4_quotients_tested": 17,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,6,2,5)(3,8,4,7), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8) ]",
+      "order": 16,
+      "rank": 3,
+      "normal_quotients_tested": 17,
+      "class2_exponent4_quotients_tested": 17,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8) ]",
+      "order": 16,
+      "rank": 3,
+      "normal_quotients_tested": 19,
+      "class2_exponent4_quotients_tested": 19,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,3)(2,4)(5,7)(6,8), (5,6)(7,8) ]",
+      "order": 16,
+      "rank": 3,
+      "normal_quotients_tested": 19,
+      "class2_exponent4_quotients_tested": 19,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,8)(4,7), (3,4)(5,7)(6,8), (1,4,2,3)(5,8,6,7) ]",
+      "order": 16,
+      "rank": 2,
+      "normal_quotients_tested": 7,
+      "class2_exponent4_quotients_tested": 6,
+      "max_center_squared_times_derived": 16,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,8,4,6,2,7,3,5), (1,4,2,3)(5,8,6,7), (5,6)(7,8) ]",
+      "order": 16,
+      "rank": 2,
+      "normal_quotients_tested": 9,
+      "class2_exponent4_quotients_tested": 8,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,6,2,5)(3,8,4,7), (5,7)(6,8), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 16,
+      "rank": 2,
+      "normal_quotients_tested": 11,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,7,3,5)(2,8,4,6), (1,3)(2,4)(5,7)(6,8), (5,6)(7,8) ]",
+      "order": 16,
+      "rank": 2,
+      "normal_quotients_tested": 11,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,7)(6,8), (1,3)(2,4)(5,7)(6,8) ]",
+      "order": 16,
+      "rank": 3,
+      "normal_quotients_tested": 19,
+      "class2_exponent4_quotients_tested": 19,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,8,4,7) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (1,3)(2,4)(5,7,6,8), (3,4)(7,8), (5,6)(7,8) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,7)(6,8), (1,3)(2,4)(5,7)(6,8), (5,6)(7,8) ]",
+      "order": 32,
+      "rank": 3,
+      "normal_quotients_tested": 26,
+      "class2_exponent4_quotients_tested": 26,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,7,3,5)(2,8,4,6) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (3,4)(5,8,6,7), (1,3)(2,4)(5,7)(6,8), (5,6)(7,8) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,8,4,6,2,7,3,5) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,8,6,7), (1,4,2,3)(5,7,6,8), (5,6)(7,8) ]",
+      "order": 32,
+      "rank": 2,
+      "normal_quotients_tested": 12,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (3,4)(5,7)(6,8), (1,4,2,3)(5,7,6,8), (5,6)(7,8) ]",
+      "order": 32,
+      "rank": 3,
+      "normal_quotients_tested": 20,
+      "class2_exponent4_quotients_tested": 19,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (7,8) ]",
+      "order": 64,
+      "rank": 3,
+      "normal_quotients_tested": 27,
+      "class2_exponent4_quotients_tested": 26,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,7,3,5)(2,8,4,6), (7,8) ]",
+      "order": 64,
+      "rank": 2,
+      "normal_quotients_tested": 13,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,7)(6,8) ]",
+      "order": 64,
+      "rank": 3,
+      "normal_quotients_tested": 27,
+      "class2_exponent4_quotients_tested": 26,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (5,7)(6,8), (1,5)(2,6)(3,8,4,7) ]",
+      "order": 64,
+      "rank": 2,
+      "normal_quotients_tested": 13,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,8,6,7) ]",
+      "order": 64,
+      "rank": 3,
+      "normal_quotients_tested": 27,
+      "class2_exponent4_quotients_tested": 26,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,7,3,5)(2,8,4,6), (1,5)(2,6)(3,8,4,7) ]",
+      "order": 64,
+      "rank": 2,
+      "normal_quotients_tested": 13,
+      "class2_exponent4_quotients_tested": 11,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 2
+    },
+    {
+      "generators": "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,7)(4,8), (5,7)(6,8), (7,8) ]",
+      "order": 128,
+      "rank": 3,
+      "normal_quotients_tested": 28,
+      "class2_exponent4_quotients_tested": 26,
+      "max_center_squared_times_derived": 64,
+      "max_normal_generator_rank": 3
+    }
+  ],
+  "efficient_generators": [
+    "[ (1,2)(3,4)(5,6)(7,8), (1,3)(2,4)(5,7)(6,8), (3,4)(7,8), (5,6)(7,8), (1,5)(2,6)(3,7)(4,8) ]"
+  ]
+}

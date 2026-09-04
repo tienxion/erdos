@@ -1,0 +1,288 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{needspace}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\sr}{\widehat r}
+\newcommand{\sq}{\sqcup}
+\newcommand{\ellk}{\ell_k}
+\title{Local degree conditions for the size Ramsey numbers of star forests}
+\author{tienxion}
+\date{4 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For two star forests, the Burr--Erd\H{o}s--Faudree--Rousseau--Schelp conjecture expresses their size Ramsey number as a sum of antidiagonal maxima of component sizes. We prove a sufficient condition combining the parity of maximizing components with local drops between consecutive antidiagonal maxima. The condition permits arbitrarily many components and long intervals of equal maxima. The simultaneous-suffix framework and parity-dependent lower bound were previously recorded by rickyc on the Erd\H{o}s Problems forum. Our additional step controls the maximum degrees of equality hosts to recover the conjectured value under local gap conditions. As a concrete consequence, for every $r,m\ge1$,
+\[
+\sr(K_{1,6}\sq rK_{1,3}\sq mK_2,\ K_{1,5}\sq K_2)=11+7r+5m.
+\]
+We also obtain the conjectured formula whenever consecutive antidiagonal maxima decrease by at least two. These results do not settle the general conjecture.
+\end{abstract}
+
+\noindent\textbf{Draft status.} AI assistance was used in developing and writing this draft. The coordinating human reports having mathematically reviewed it; external peer review has not taken place. Priority of the additional gap criterion remains to be confirmed. This is a partial result, not a claim that the general Erd\H{o}s problem is solved.
+
+\section{Statement}
+All graphs are finite and simple. Copies need not be induced. Write $G\to(F,H)$ if every red/blue coloring of $E(G)$ contains a red copy of $F$ or a blue copy of $H$. The size Ramsey number $\sr(F,H)$ is the minimum of $e(G)$ over these hosts.
+
+Let $A=(a_1,\ldots,a_s)$ and $B=(b_1,\ldots,b_t)$ be nonincreasing sequences of positive integers, and put
+\[
+ F(A)=\bigsqcup_{i=1}^sK_{1,a_i},\qquad
+ F(B)=\bigsqcup_{j=1}^tK_{1,b_j},\qquad q=s+t.
+\]
+For $2\le k\le q$, define
+\[
+ \ell_k=\max_{\substack{1\le i\le s,\ 1\le j\le t\\i+j=k}}
+ (a_i+b_j-1),\qquad S_k=\sum_{h=k}^q\ell_h.
+\]
+The conjecture of Burr et al.~\cite{BEFRS} asserts $\sr(F(A),F(B))=S_2$.
+
+Call an index $k$ \emph{good} if at least one pair $(i,j)$ attaining $\ell_k$ has either both $a_i,b_j$ odd, or $\min(a_i,b_j)=1$. The word good refers only to this explicit arithmetic condition.
+
+\Needspace{18\baselineskip}
+\begin{theorem}[Local criterion]\label{thm:local}
+Suppose that every index $2\le k<q$ which is not good satisfies at least one of the following conditions:
+\begin{enumerate}
+\item $\ell_k-\ell_{k+1}\ge3$;
+\item $\ell_k-\ell_{k+1}=2$, and either
+\[
+ k+1<q\ \text{ and }\ \ell_{k+1}-\ell_{k+2}\ge2,
+ \qquad\text{or}\qquad k+1=q\ \text{ and }\ \ell_q\ge2.
+\]
+\end{enumerate}
+There is no condition on the final index $q$. Then
+\[
+ \sr(F(A),F(B))=S_2.
+\]
+Every host attaining this value has maximum degree at most $\ell_2$. If $q>2$ and $\ell_2-\ell_3\ge2$, it has at most one vertex of degree $\ell_2$. For $q=2$, the last assertion holds when $\ell_2\ge2$.
+\end{theorem}
+
+The all-odd hypothesis in Davoodi et al.~\cite{DJKR} makes every index good. Theorem~\ref{thm:local} also allows mixed parity and equal successive values of $\ell_k$ at good indices. Its conditions involve the maximizing pairs and adjacent values, not the total number of components. Single-star cases, including a star against two arbitrary positive stars, also appear in Lortz and Mengersen~\cite[Theorem 7]{LM}.
+
+A forum contribution by rickyc dated 6 August 2026~\cite{rickyc} already gives the simultaneous-suffix deletion framework, the same distinction between good and other diagonals, and the general lower bound
+\[
+ \sr(F(A),F(B))\ge S_2-\sum_{k=2}^{q-1}\eta_k,
+ \qquad
+ \eta_k=\begin{cases}0,&k\text{ is good},\\1,&k\text{ is not good}.\end{cases}
+\]
+We do not claim these ingredients as new. The candidate addition here is the equality-host degree argument in Section 3: under the local gap conditions it removes all of these deficits. The August contribution was identified during the final attribution audit, after the present argument had been developed.
+
+\section{Deletion and degree bounds}
+For $1\le i\le s$ and $1\le j\le t$, let
+\[
+ A_i=(a_i,\ldots,a_s),\qquad B_j=(b_j,\ldots,b_t).
+\]
+A graph has property $\mathcal P_k$ if
+\[
+ G\to(F(A_i),F(B_j))\qquad\text{for every feasible }i+j=k.
+\]
+In particular, $\mathcal P_2$ is the original Ramsey property. Property $\mathcal P_q$ concerns the two single stars $K_{1,a_s}$ and $K_{1,b_t}$.
+
+\begin{lemma}[Simultaneous suffix deletion]\label{lem:delete}
+If $G$ has $\mathcal P_k$ and $k<q$, then $G-v$ has $\mathcal P_{k+1}$ for every vertex $v$.
+\end{lemma}
+This formulation and its proof already appear in~\cite{rickyc}; we include the argument to make the presentation self-contained.
+\begin{proof}
+First suppose $G\to(F(A_i),F(B_j))$ and $i<s$. Suppose an edge coloring of $G-v$ avoids red $F(A_{i+1})$ and blue $F(B_j)$. Extend it by coloring all edges at $v$ red. A red $F(A_i)$ in the extension would have at most one component meeting $v$. The other components contain $F(A_{i+1})$, since removing any one star from a nonincreasing list leaves a forest containing the list with its largest star removed. A blue target is unchanged. Thus no such avoiding coloring exists. The analogous assertion holds on deleting the largest blue star.
+
+For each feasible pair $(i,j)$ with $i+j=k+1$, at least one of $(i-1,j)$ and $(i,j-1)$ is feasible. Apply the corresponding assertion to that predecessor.
+\end{proof}
+
+We use Vizing's theorem and the following result of Fournier: if the subgraph induced by the maximum-degree vertices of a graph is a forest, the graph has a proper edge coloring with $\Delta(G)$ colors; see~\cite{HZ}. We call this induced subgraph the maximum-degree core.
+
+\begin{lemma}\label{lem:degree}
+If $G$ has $\mathcal P_k$, then $\Delta(G)\ge\ell_k-1$. If $k$ is good, then $\Delta(G)\ge\ell_k$.
+\end{lemma}
+\begin{proof}
+Choose a pair $(i,j)$ attaining $\ell_k$, and write $a=a_i$, $b=b_j$. If $\Delta(G)\le a+b-3$, Vizing gives at most $a+b-2$ matching color classes. Merge at most $a-1$ classes into red and at most $b-1$ into blue. This avoids both largest stars and therefore avoids both target forests, a contradiction.
+
+If $a,b$ are odd, a graph of maximum degree at most $a+b-2$ also admits a coloring with red maximum degree at most $a-1$ and blue maximum degree at most $b-1$. Indeed, embed it in an $(a+b-2)$-regular simple graph, factor that even-regular graph into $2$-factors, and put $(a-1)/2$ factors in red and $(b-1)/2$ in blue. Restrict to the original graph. The zero-degree case is immediate. This is the parity argument in~\cite[Lemma 2.1]{DJKR}. A regular supergraph can be obtained by repeatedly taking two disjoint copies and joining corresponding deficient vertices.
+
+If $a=1$, the all-blue coloring requires a copy of the blue forest, hence degree at least $b=\ell_k$. The case $b=1$ is symmetric. Applying either argument to a witnessing maximizing pair proves the last assertion.
+\end{proof}
+
+\begin{lemma}[Upper construction]\label{lem:upper}
+The disjoint union $\bigsqcup_{h=k}^qK_{1,\ell_h}$ has $\mathcal P_k$.
+\end{lemma}
+\begin{proof}
+Fix a feasible starting pair $(i,j)$ with $i+j=k$. At the star with $\ell_{i+j}$ edges, the center has at least $a_i$ red edges or at least $b_j$ blue edges. Select the corresponding monochromatic star, and increase $i$ or $j$, respectively. Continue on the next host component. One list is exhausted in at most $q-k+1$ steps. The selected stars in that color form its target forest, and are vertex-disjoint because they came from different host components.
+\end{proof}
+
+\section{Proof of the local criterion}
+\begin{proof}[Proof of Theorem~\ref{thm:local}]
+We prove, by decreasing induction on $k$, three assertions:
+\begin{enumerate}
+\item every graph with $\mathcal P_k$ has at least $S_k$ edges;
+\item every such graph with exactly $S_k$ edges has maximum degree at most $\ell_k$;
+\item an equality graph has at most one degree-$\ell_k$ vertex if $k<q$ and $\ell_k-\ell_{k+1}\ge2$, or if $k=q$ and $\ell_q\ge2$.
+\end{enumerate}
+
+For $k=q$ this is the elementary formula
+\[
+ \sr(K_{1,a_s},K_{1,b_t})=a_s+b_t-1=\ell_q.
+\]
+For completeness, any graph with at most $a_s+b_t-2$ edges can be colored with at most $a_s-1$ red edges and at most $b_t-1$ blue edges. The opposite inequality follows from a star with $a_s+b_t-1$ edges. An equality graph has maximum degree at most its edge count. If two vertices had degree $\ell_q\ge2$, their incident edges would number at least $2\ell_q-1>\ell_q$, which is impossible.
+
+Now let $k<q$ and assume the assertions for all larger indices. Take a graph $G$ with $\mathcal P_k$, a maximum-degree vertex $v$, and set $D=\Delta(G)$, $H=G-v$. By Lemma~\ref{lem:delete}, $H$ has $\mathcal P_{k+1}$, so
+\[
+ e(G)=D+e(H)\ge D+S_{k+1}.
+\]
+If $k$ is good, Lemma~\ref{lem:degree} gives $D\ge\ell_k$ and the lower bound follows. Otherwise suppose, for a contradiction, that $e(G)<S_k$. Lemma~\ref{lem:degree} and integrality force
+\begin{equation}\label{eq:rigid}
+ e(G)=S_k-1,\qquad D=\ell_k-1,\qquad e(H)=S_{k+1}.
+\end{equation}
+The inductive equality bound gives $\Delta(H)\le\ell_{k+1}$.
+
+If $\ell_k-\ell_{k+1}\ge3$, every vertex other than $v$ has degree in $G$ at most $\ell_{k+1}+1\le D-1$. The maximum-degree core consists of $v$ alone.
+
+In the remaining allowed case, $\ell_k-\ell_{k+1}=2$. Every degree-$D$ vertex other than $v$ has degree exactly $\ell_{k+1}=D-1$ in $H$ and is adjacent to $v$. By the stated additional condition and the inductive third assertion, there is at most one such vertex. Consequently the maximum-degree core of $G$ is a vertex or an edge.
+
+In either case Fournier's theorem yields a proper edge coloring with $D$ matching classes. For a pair $(i,j)$ attaining $\ell_k$, equation~\eqref{eq:rigid} says $D=a_i+b_j-2$. Merge $a_i-1$ classes into red and $b_j-1$ into blue. Neither color contains its largest target star. This contradicts $\mathcal P_k$, proving the lower bound.
+
+It remains to prove the equality assertions at index $k$. If $e(E)=S_k$ and $E$ has $\mathcal P_k$, deleting any vertex $w$ and applying the lower bound at $k+1$ gives
+\[
+ d_E(w)\le S_k-S_{k+1}=\ell_k.
+\]
+Suppose $\ell_k-\ell_{k+1}\ge2$ and $w,u$ are distinct degree-$\ell_k$ vertices. Then $E-w$ has $\mathcal P_{k+1}$ and exactly $S_{k+1}$ edges, so its maximum degree is at most $\ell_{k+1}$. But $u$ has degree at least $\ell_k-1>\ell_{k+1}$ there, a contradiction. This completes the induction. Lemma~\ref{lem:upper} supplies the matching upper bound.
+\end{proof}
+
+\section{Consequences and comparison}
+
+\begin{corollary}[Decreasing maxima]\label{cor:spacing}
+If $\ell_k-\ell_{k+1}\ge2$ for every $2\le k<q$, the conjectured formula holds.
+\end{corollary}
+\begin{proof}
+If $\ell_q\ge2$, every nonterminal index satisfies one of the local conditions. If $\ell_q=1$, then $a_s=b_t=1$. Every feasible pair on the penultimate diagonal has one component of size $1$, so $q-1$ is good. Every earlier index again satisfies a local condition. For $q=2$, the single-star formula applies directly.
+\end{proof}
+
+\begin{corollary}[An even largest component]\label{cor:even}
+Suppose $s,t\ge2$, all components except $a_1$ have odd size, and $a_1$ is even. If
+\[
+ a_1-a_2\ge3,\qquad b_1-b_2>a_1-a_2,
+\]
+then the conjectured formula holds provided, for every $3\le k\le\min(q,t+1)$, some maximizing pair on diagonal $k$ has $i\ge2$.
+\end{corollary}
+\begin{proof}
+The additional maximizing-pair condition makes every index after the first good; for $k>t+1$, row $i=1$ is unavailable. On diagonal $3$, the strict gap inequality yields
+\[
+ \ell_3=a_2+b_1-1,\qquad \ell_2-\ell_3=a_1-a_2\ge3.
+\]
+Thus the only possibly bad nonterminal index satisfies the first local condition.
+\end{proof}
+
+For $t=2$, the extra maximizing-pair condition in Corollary~\ref{cor:even} is automatic from its strict gap inequality. This already gives unrestricted lengths and repetitions in the tail of $A$.
+
+\begin{corollary}[A family with two independent multiplicities]\label{cor:family}
+For all positive integers $r,m$,
+\[
+ \sr(K_{1,6}\sq rK_{1,3}\sq mK_2,\ K_{1,5}\sq K_2)
+ =11+7r+5m.
+\]
+\end{corollary}
+\begin{proof}
+The antidiagonal maxima, in order, are
+\[
+ 10,\quad\underbrace{7,\ldots,7}_{r\text{ times}},\quad
+ \underbrace{5,\ldots,5}_{m\text{ times}},\quad1.
+\]
+The first index is not good and is followed by a drop of $3$. Every later maximum is attained by an odd--odd pair. Theorem~\ref{thm:local} gives the sum displayed in the statement.
+\end{proof}
+
+Another example, with both components of the second forest larger than one, is
+\[
+ \sr(K_{1,6}\sq K_{1,3}\sq rK_2,\ K_{1,7}\sq K_{1,3})=24+7r
+ \qquad(r\ge1).
+\]
+Here the maxima are $12,9$, followed by $r$ copies of $7$, and finally $3$. Again only the first index is bad, with a drop of $3$.
+
+\begin{corollary}[Arbitrarily many even components]\label{cor:many}
+Let $h,m,r_1,\ldots,r_h$ be positive integers. Construct $A$ by concatenating the blocks
+\[
+ \left(4j+2,\ \underbrace{4j-1,\ldots,4j-1}_{r_j\text{ entries}}\right)
+ \quad\text{for }j=h,h-1,\ldots,1,
+\]
+and then appending $m$ entries equal to $1$. For $B=(5,1)$,
+\[
+ \sr(F(A),F(B))=2h^2+8h+\sum_{j=1}^h r_j(4j+3)+5m+1.
+\]
+This value exceeds the lower bound obtained by rounding every even component of $A$ down by one and applying the all-odd theorem by exactly $h$.
+\end{corollary}
+\begin{proof}
+Consecutive entries of $A$ differ by at most $3$. With $B=(5,1)$, every diagonal except the last is therefore maximized by its column-$1$ pair: the competing column-$2$ value is the preceding entry of $A$, whereas the column-$1$ value is the current entry plus $4$. The maxima are the entries of $A$ plus $4$, followed by $1$.
+
+The only bad indices correspond to the $h$ even entries $4j+2$. Each is followed by $4j-1$, so its maximum drops by exactly $3$. All other indices are good. Summing the maxima gives
+\[
+ \sum_{j=1}^h(4j+6)+\sum_{j=1}^h r_j(4j+3)+5m+1,
+\]
+which is the claimed expression. If each even entry is reduced by one, the resulting sequence is still nonincreasing and all its adjacent gaps are at most $2$. Column $1$ still supplies every nonfinal maximum; exactly $h$ of those maxima have decreased by one. Both forests now have only odd components, so their size Ramsey number is the corresponding sum by the published all-odd theorem. Monotonicity therefore gives precisely the claimed comparison lower bound.
+\end{proof}
+
+\Needspace{10\baselineskip}
+\paragraph{What the comparison establishes.}
+The families in Corollaries~\ref{cor:family} and~\ref{cor:many} have neither forest uniform, contain an even component, and have more than one nontrivial component in the first forest. They therefore fall outside the uniform, all-odd, one-star, and equal-two-star hypotheses listed in~\cite{DJKR}, as well as the one-nontrivial-star-per-forest scope of Cheng's thesis~\cite{Cheng}. Their final maximum is $1$, so they fail the Gy\H{o}ri--Schelp numerical sufficient condition as restated in~\cite[Theorem 1.4]{DJKR}. For the example with $B=(7,3)$, that numerical condition fails already at the first $7$ when $r\ge3$, because $\binom72=21<7r+3$.
+
+For Corollary~\ref{cor:family}, the bound in~\cite{rickyc} is one edge below the exact value proved here. For Corollary~\ref{cor:many}, it is $h$ edges below, since exactly $h$ nonfinal diagonals are not good. Thus the growing improvement also holds relative to that specific prior forum bound, not only to the direct all-odd rounding comparison.
+
+These observations establish noncoverage by those stated hypotheses, not priority over all results or consequences in the literature. The full original Gy\H{o}ri--Schelp article and the full Cheng thesis were not accessible in this audit. The proof of Theorem~\ref{thm:local} does not depend on either source. A separate novelty audit records the accessible papers and the limitations of the search.
+
+\paragraph{What remains open.}
+The theorem does not cover a bad diagonal followed by a plateau, or a drop of one, unless another theorem handles that instance. For example, many forests containing long runs of even star sizes remain outside the criterion. No resolution of the full star-forest conjecture is asserted.
+
+\begin{thebibliography}{9}
+\bibitem{BEFRS}
+S. A. Burr, P. Erd\H{o}s, R. J. Faudree, C. C. Rousseau, and R. H. Schelp,
+Ramsey-minimal graphs for multiple copies,
+\emph{Indagationes Mathematicae (Proceedings)} 81 (1978), 187--195.
+\href{https://users.renyi.hu/~p_erdos/1978-38.pdf}{Author archive}.
+
+\bibitem{GS}
+E. Gy\H{o}ri and R. H. Schelp,
+Two-edge colorings of graphs with bounded degree in both colors,
+\emph{Discrete Mathematics} 249 (2002), 105--110.
+\href{https://doi.org/10.1016/S0012-365X(01)00238-2}{doi:10.1016/S0012-365X(01)00238-2}.
+
+\bibitem{DJKR}
+A. Davoodi, R. Javadi, A. Kamranian, and G. Raeisi,
+On a conjecture of Erd\H{o}s on size Ramsey number of star forests,
+\emph{Ars Mathematica Contemporanea} 25 (2025), P2.09.
+\href{https://doi.org/10.26493/1855-3974.3081.d6c}{doi:10.26493/1855-3974.3081.d6c}.
+\href{https://arxiv.org/abs/2111.02065}{arXiv:2111.02065}.
+
+\bibitem{HZ}
+A. J. W. Hilton and C. Zhao,
+On the edge-colouring of graphs whose core has maximum degree two,
+\emph{Journal of Combinatorial Mathematics and Combinatorial Computing} 21 (1996), 97--108.
+\href{https://combinatorialpress.com/article/jcmcc/Volume%20021/vol-21-paper%207.pdf}{Publisher PDF}.
+This source states Fournier's theorem and cites its original publication.
+
+\bibitem{Cheng}
+Y.-J. Cheng,
+\emph{Size Ramsey Numbers of Star Forests},
+master's thesis, National Taiwan University, 2010.
+\href{https://scholars.lib.ntu.edu.tw/entities/publication/44c55546-025c-43b7-8f29-11a62827cc84}{Institutional abstract and record}.
+
+\bibitem{FLN}
+P. Fu, Z. Luo, and Z. Ni,
+Size Ramsey minimal graphs for uniform star forests,
+\href{https://arxiv.org/abs/2606.04439v3}{arXiv:2606.04439v3}, revised 4 July 2026.
+\par\noindent The original version's general-solution claim was removed in later versions.
+
+\bibitem{LM}
+R. Lortz and I. Mengersen,
+Size Ramsey results for the path of order three,
+\emph{Graphs and Combinatorics} 37 (2021), 2315--2331.
+\href{https://doi.org/10.1007/s00373-021-02398-3}{doi:10.1007/s00373-021-02398-3}.
+
+\bibitem{rickyc}
+rickyc (forum username),
+Partial lower bound for problem 561,
+Erd\H{o}s Problems forum comment, 6 August 2026, 16:25.
+\href{https://www.erdosproblems.com/forum/thread/561\#post-8384}{Comment 8384}.
+The author discloses AI assistance in the comment. Accessed 4 September 2026.
+\end{thebibliography}
+\end{document}

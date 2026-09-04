@@ -1,0 +1,1002 @@
+[
+  {
+    "a": [
+      2,
+      1
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 6,
+    "by_n": [
+      {
+        "n": 4,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 5,
+        "result": "hosts=5 nontrivial_checked=5 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=9 nontrivial_checked=8 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=6 nontrivial_checked=6 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=3 nontrivial_checked=3 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=1 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.022652864456176758
+  },
+  {
+    "a": [
+      3,
+      1
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 8,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=4 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=20 nontrivial_checked=18 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=41 nontrivial_checked=39 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=50 nontrivial_checked=43 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=33 nontrivial_checked=26 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=17 nontrivial_checked=11 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=7 nontrivial_checked=3 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=3 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.03693413734436035
+  },
+  {
+    "a": [
+      3,
+      2
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 9,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=2 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=22 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=73 nontrivial_checked=52 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=124 nontrivial_checked=88 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=124 nontrivial_checked=90 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=83 nontrivial_checked=51 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=39 nontrivial_checked=20 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=18 nontrivial_checked=5 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=7 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.05094194412231445
+  },
+  {
+    "a": [
+      4,
+      1
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 10,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=20 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=110 nontrivial_checked=64 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=271 nontrivial_checked=171 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=369 nontrivial_checked=220 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=332 nontrivial_checked=170 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=202 nontrivial_checked=91 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=100 nontrivial_checked=34 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=41 nontrivial_checked=11 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=18 nontrivial_checked=3 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=7 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.06607413291931152
+  },
+  {
+    "a": [
+      4,
+      2
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 11,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=14 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=133 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=515 nontrivial_checked=229 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=974 nontrivial_checked=490 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=1132 nontrivial_checked=586 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=895 nontrivial_checked=415 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=527 nontrivial_checked=214 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=244 nontrivial_checked=75 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=106 nontrivial_checked=23 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=42 nontrivial_checked=5 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=18 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.1082308292388916
+  },
+  {
+    "a": [
+      3,
+      2
+    ],
+    "b": [
+      3,
+      2
+    ],
+    "conjectured": 12,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=9 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=139 nontrivial_checked=138 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=832 nontrivial_checked=794 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=2272 nontrivial_checked=2080 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=3507 nontrivial_checked=2903 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=3491 nontrivial_checked=2607 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=2513 nontrivial_checked=1639 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=1377 nontrivial_checked=787 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=635 nontrivial_checked=295 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=261 nontrivial_checked=97 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=108 nontrivial_checked=27 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=42 nontrivial_checked=7 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=18 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.26273083686828613
+  },
+  {
+    "a": [
+      4,
+      2
+    ],
+    "b": [
+      3,
+      1
+    ],
+    "conjectured": 12,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=9 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=139 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=832 nontrivial_checked=304 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=2272 nontrivial_checked=765 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=3507 nontrivial_checked=1042 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=3491 nontrivial_checked=898 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=2513 nontrivial_checked=576 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=1377 nontrivial_checked=265 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=635 nontrivial_checked=97 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=261 nontrivial_checked=27 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=108 nontrivial_checked=7 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=42 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=18 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.24451899528503418
+  },
+  {
+    "a": [
+      4,
+      2
+    ],
+    "b": [
+      3,
+      2
+    ],
+    "conjectured": 14,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=2 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=95 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=1460 nontrivial_checked=1092 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=8563 nontrivial_checked=5602 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=24543 nontrivial_checked=13581 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=40752 nontrivial_checked=18929 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=44475 nontrivial_checked=17724 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=34768 nontrivial_checked=12103 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=20994 nontrivial_checked=6475 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=10335 nontrivial_checked=2782 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=4456 nontrivial_checked=1022 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=1775 nontrivial_checked=328 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=699 nontrivial_checked=102 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=269 nontrivial_checked=27 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=109 nontrivial_checked=7 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=42 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=18 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 23,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 24,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 25,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 26,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 3.639312982559204
+  },
+  {
+    "a": [
+      4,
+      3
+    ],
+    "b": [
+      2,
+      1
+    ],
+    "conjectured": 12,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=9 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=139 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=832 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=2272 nontrivial_checked=364 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=3507 nontrivial_checked=775 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=3491 nontrivial_checked=864 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=2513 nontrivial_checked=587 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=1377 nontrivial_checked=281 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=635 nontrivial_checked=93 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=261 nontrivial_checked=25 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=108 nontrivial_checked=5 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=42 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=18 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.2696340084075928
+  },
+  {
+    "a": [
+      4,
+      2
+    ],
+    "b": [
+      4,
+      2
+    ],
+    "conjectured": 15,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=64 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=1581 nontrivial_checked=508 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=13969 nontrivial_checked=3592 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=55703 nontrivial_checked=11402 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=121470 nontrivial_checked=20355 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=166519 nontrivial_checked=23841 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=157814 nontrivial_checked=20251 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=111514 nontrivial_checked=13189 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=62366 nontrivial_checked=6865 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=29297 nontrivial_checked=2921 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=12174 nontrivial_checked=1058 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=4776 nontrivial_checked=343 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=1822 nontrivial_checked=105 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=705 nontrivial_checked=29 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=270 nontrivial_checked=7 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=109 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 23,
+        "result": "hosts=42 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 24,
+        "result": "hosts=18 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 25,
+        "result": "hosts=7 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 26,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 27,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 28,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 16.741025686264038
+  },
+  {
+    "a": [
+      2,
+      1,
+      1
+    ],
+    "b": [
+      2,
+      1,
+      1
+    ],
+    "conjectured": 9,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=2 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=22 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=73 nontrivial_checked=68 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=124 nontrivial_checked=117 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=124 nontrivial_checked=116 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=83 nontrivial_checked=79 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=39 nontrivial_checked=39 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=18 nontrivial_checked=18 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=7 nontrivial_checked=7 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=3 nontrivial_checked=3 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=1 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.041033029556274414
+  },
+  {
+    "a": [
+      2,
+      2,
+      1
+    ],
+    "b": [
+      2,
+      1,
+      1
+    ],
+    "conjectured": 11,
+    "by_n": [
+      {
+        "n": 5,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 6,
+        "result": "hosts=14 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=133 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=515 nontrivial_checked=496 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=974 nontrivial_checked=950 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=1132 nontrivial_checked=1109 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=895 nontrivial_checked=867 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=527 nontrivial_checked=512 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=244 nontrivial_checked=231 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=106 nontrivial_checked=98 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=42 nontrivial_checked=33 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=18 nontrivial_checked=13 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=7 nontrivial_checked=3 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=3 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 0.16605091094970703
+  },
+  {
+    "a": [
+      3,
+      2,
+      1
+    ],
+    "b": [
+      2,
+      2,
+      1
+    ],
+    "conjectured": 14,
+    "by_n": [
+      {
+        "n": 6,
+        "result": "hosts=2 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 7,
+        "result": "hosts=95 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 8,
+        "result": "hosts=1460 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 9,
+        "result": "hosts=8563 nontrivial_checked=8543 no_counterexample"
+      },
+      {
+        "n": 10,
+        "result": "hosts=24543 nontrivial_checked=24518 no_counterexample"
+      },
+      {
+        "n": 11,
+        "result": "hosts=40752 nontrivial_checked=40730 no_counterexample"
+      },
+      {
+        "n": 12,
+        "result": "hosts=44475 nontrivial_checked=44434 no_counterexample"
+      },
+      {
+        "n": 13,
+        "result": "hosts=34768 nontrivial_checked=34722 no_counterexample"
+      },
+      {
+        "n": 14,
+        "result": "hosts=20994 nontrivial_checked=20903 no_counterexample"
+      },
+      {
+        "n": 15,
+        "result": "hosts=10335 nontrivial_checked=10245 no_counterexample"
+      },
+      {
+        "n": 16,
+        "result": "hosts=4456 nontrivial_checked=4350 no_counterexample"
+      },
+      {
+        "n": 17,
+        "result": "hosts=1775 nontrivial_checked=1686 no_counterexample"
+      },
+      {
+        "n": 18,
+        "result": "hosts=699 nontrivial_checked=617 no_counterexample"
+      },
+      {
+        "n": 19,
+        "result": "hosts=269 nontrivial_checked=215 no_counterexample"
+      },
+      {
+        "n": 20,
+        "result": "hosts=109 nontrivial_checked=69 no_counterexample"
+      },
+      {
+        "n": 21,
+        "result": "hosts=42 nontrivial_checked=21 no_counterexample"
+      },
+      {
+        "n": 22,
+        "result": "hosts=18 nontrivial_checked=5 no_counterexample"
+      },
+      {
+        "n": 23,
+        "result": "hosts=7 nontrivial_checked=1 no_counterexample"
+      },
+      {
+        "n": 24,
+        "result": "hosts=3 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 25,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      },
+      {
+        "n": 26,
+        "result": "hosts=1 nontrivial_checked=0 no_counterexample"
+      }
+    ],
+    "seconds": 8.019278049468994
+  }
+]
