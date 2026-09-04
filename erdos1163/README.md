@@ -1,53 +1,59 @@
-# Erdős 1163 research
+# Problem 1163: orders of subgroups of symmetric groups
 
-Start with [results.md](results.md).
-It states the strongest theorems, their sampling measures, proof
-locations, and the remaining unrestricted problem.
+**Status: a partial result, not a solution of the unrestricted problem.**
+The [submitted proof](proof.md) gives a uniform counting estimate for each
+prescribed order in a linear interval. The other notes study specified
+classes of subgroups and must be read with their stated sampling measures.
 
-Status: substantial partial results with written proofs, independent
-agent audits, and finite checks. This is not a solution of Erdős 1163.
-Novelty has not been established. Any submission is explicitly a partial
-result with AI disclosure, not a claim to solve the unrestricted problem.
+## The submitted result
 
-## Files
+Let $a_{n,j}=\#\{H\leq S_n:|H|=2^j\}$, counting actual subgroups.
+Uniformly for integers $\lfloor n/4\rfloor\leq j\leq\lfloor n/2\rfloor$,
 
-- [order_spectrum.md](order_spectrum.md): uniform exact-order counts for every exponent between floor(n/4) and floor(n/2), and a sharper matching estimate inside Q_n.
-- [website_note_draft.md](website_note_draft.md): self-contained proof of the exact-order result selected for submission.
-- [extension_eight_point_projections.md](extension_eight_point_projections.md): all class-two exponent-four 2-subgroups with orbit sizes at most eight.
-- [special_structure.md](special_structure.md): typical center, derived subgroup, Frattini subgroup, and generator number in that full class.
-- [extension_one_bad_orbit.md](extension_one_bad_orbit.md): up to logarithmically many arbitrary exceptional eight-point projections.
-- [progress.md](progress.md): elementary abelian asymptotics, the dihedral/Klein-four family, and its order central limit theorem.
-- [progress_v2.md](progress_v2.md): all abelian subgroups, an explicit asymptotic formula, an unrestricted bound on abelian probability, and the odd-degree S3 obstruction.
-- [extension_small_orbits.md](extension_small_orbits.md): all 2-subgroups with orbit sizes at most four, including arbitrary subdirects and cyclic projections.
-- [extension_efficient_orbits.md](extension_efficient_orbits.md): arbitrary subdirects with the specified two-, four-, and eight-point projections.
-- [progress_v3.md](progress_v3.md): eight-point factors, the explicit 7/8 lower bound, stronger unrestricted exclusion estimates, and the new order law.
-- [verify.py](verify.py): exact binary and first-family checks.
-- [verify_abelian.py](verify_abelian.py): Birkhoff, actual abelian permutation subgroup, and rank-defect checks.
-- [verify_odd_family.py](verify_odd_family.py): independent S3-family checks and coefficient asymptotics.
-- [verify_small_orbits.py](verify_small_orbits.py): exact class-two counts and actual permutation comparisons.
-- [verify_extraspecial.py](verify_extraspecial.py): eight-point group and normalizer, exact order counts, and coefficient and moment checks.
+$$
+\log_2 a_{n,j}\geq\frac{n^2}{16}
++\left(\frac{7n}{8}-\left|j-\frac{3n}{8}\right|\right)\log_2 n-O(n).
+$$
 
-The five original verification scripts above and
-`verify_degree8_classification.py` use Python 3 without external packages.
-The latter independently enumerates all 544 qualifying subgroups of an
-explicit Sylow group and identifies its 53 transitive subgroups with nine
-models. Its argument and certificate are explained in
-`degree8_classification_certificate.md`.
+Together with Roney-Dougal–Tracey's upper bound for all 2-subgroups, this gives
 
-`verify_eight_point_models.py`, `verify_bad_orbit_quotients.py`, and
-`classify_degree8.py` run with SageMath (`sage -python filename.py`).
-The quotient check includes all 470 normal quotients of the exceptional
-transitive Sylow-subgroup classes. Each script writes a JSON report.
+$$
+\log_2 a_{n,j}=\frac{n^2}{16}+O(n\log n)
+$$
 
-Independent proof reports are in `audit_abelian.md`, `audit_families.md`,
-`audit_small_orbits.md`, `audit_extraspecial.md`,
-`audit_extraspecial_clt.md`, `audit_efficient_orbits.md`,
-`audit_eight_point_projections.md`, `audit_special_structure.md`,
-`audit_bad_orbit_extension.md`, and `audit_order_spectrum.md`.
+uniformly throughout the interval. The lower bound uses groups of class at
+most two and exponent dividing four, acting on blocks of two, four, and eight
+points. It does not depend on the longer classification or dominance arguments
+in the research notes.
 
-The exact-order result was submitted as a partial proof to the Erdős
-1163 website on 4 September 2026 and is awaiting moderator approval.
-The public writeup is at
-https://erdos-1163-order-counts.groggorius-george.chatgpt.site.
-See `submission_record.md` for the receipt and precise disclosures.
-No drafts outside this research directory were modified.
+This does **not** determine the relative probabilities of these orders for a
+uniformly chosen unrestricted subgroup: the remaining error matters at that scale.
+
+## Reading order
+
+| Document | Purpose |
+|---|---|
+| [Submitted proof](proof.md) | Self-contained construction, exact finite bound, and asymptotic estimate |
+| [Order spectrum](order_spectrum.md) | Additional matching second term inside the restricted family $Q_n$ |
+| [Consolidated results](results.md) | Broader counts and limit laws, with precise domains and proof links |
+| [Research notes](research_guide.md) | Detailed arguments and their development |
+| [Audits](audit_guide.md) | Separate AI-agent checks, including the submitted proof's audit |
+| [Verification](verification_guide.md) | Python/Sage scripts, finite data, and reproduction instructions |
+| [References](references.md) | Prior results and sources |
+| [Submission record](submission.md) | What was submitted and the observed moderation status |
+
+The [Erdős website claim](https://www.erdosproblems.com/forum/thread/1163/proof-claims)
+was submitted on **4 September 2026** under **tienxion** as a partial proof.
+It was awaiting moderator approval when submitted; consult that page for later
+status. The [typeset web version](https://erdos-1163-order-counts.groggorius-george.chatgpt.site)
+remains the writeup linked from that submission.
+
+## Verification and attribution
+
+The submitted argument and the broader notes were developed with OpenAI GPT-6
+assistance. [The submitted-proof audit](audit_order_spectrum.md) found
+no gap in the construction, endpoint cases, or counting estimates. This is an
+AI-agent audit, not a claim of independent human expert endorsement.
+The Gaussian identities, the degree-eight group, and the cited upper bound
+are prior mathematics. Whether the explicit refinement is already recorded
+in the literature has not been established.

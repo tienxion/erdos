@@ -1,6 +1,6 @@
 """Check the finite square-map inputs to extension_eight_point_projections.md.
 
-Run with: sage -python research/erdos1163/verify_eight_point_models.py
+Run with: sage -python erdos1163/verify_eight_point_models.py
 These are exact finite checks, not substitutes for the asymptotic proof.
 """
 from sage.all import libgap, matrix, GF

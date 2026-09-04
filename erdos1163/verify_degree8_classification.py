@@ -5,7 +5,7 @@ used to enumerate or filter subgroups. The explicit candidate models are
 read from degree8_groups.json; every retained subgroup is supplied with
 a directly verified permutation conjugator to exactly one model.
 
-Run: python3 research/erdos1163/verify_degree8_classification.py
+Run: python3 erdos1163/verify_degree8_classification.py
 """
 
 from collections import Counter, deque

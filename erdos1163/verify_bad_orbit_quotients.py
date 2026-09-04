@@ -1,6 +1,6 @@
 """Verify the finite quotient bound used for a single bad eight-point orbit.
 
-Run with: sage -python research/erdos1163/verify_bad_orbit_quotients.py
+Run with: sage -python erdos1163/verify_bad_orbit_quotients.py
 
 This enumerates subgroups of a Sylow 2-subgroup of S8 rather than relying
 on the transitive-group catalogue. Sylow conjugacy guarantees coverage

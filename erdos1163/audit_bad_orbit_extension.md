@@ -1,9 +1,11 @@
 # Audit record for the exceptional-orbit extension
 
+> This is an AI-agent proof review, not independent human peer review.
+
 4 September 2026.
 
 The root agent independently reviewed the single-exception argument in
-`extension_one_bad_orbit.md` before the logarithmic extension was added.
+[extension_one_bad_orbit.md](extension_one_bad_orbit.md) before the logarithmic extension was added.
 Its reported checks were:
 
 - `Phi(L)=span q(U)` and `d(L)=k+h-t` in the weighted efficient-class

@@ -1,9 +1,11 @@
 # Independent proof audit of the elementary, dihedral, and S3 families
 
+> This is an AI-agent proof review, not independent human peer review.
+
 Audit date: 4 September 2026.
 
-Scope: `progress.md` in full, together with Section 6 and the reduction in
-Section 7 of `progress_v2.md`. This audit checks the arguments directly;
+Scope: [progress.md](progress.md) in full, together with Section 6 and the reduction in
+Section 7 of [progress_v2.md](progress_v2.md). This audit checks the arguments directly;
 the existing Python outputs were not used as premises. The separate
 all-abelian argument is outside this audit's scope.
 

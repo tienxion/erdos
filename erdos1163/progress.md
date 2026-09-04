@@ -21,7 +21,7 @@ description of the arithmetic structure of subgroup orders in symmetric
 groups. We adopt the uniform measure on `Sub(S_n)`. The problem's wording
 does not specify a unique target limit theorem.
 
-The relevant input from `Rezk_related_v2.pdf` (a local background draft, not included in this repository) is §4.4, Theorem 4.5, and
+The relevant input from `Rezk_related_v2.pdf` (background draft, not included here) is §4.4, Theorem 4.5, and
 Appendix A: counting finite abelian subgroup data through Gaussian
 coefficients. The draft counts subgroups of a fixed-height divisible
 abelian p-group. That is a different counting problem from `Sub(S_n)`.
@@ -46,17 +46,17 @@ The results proved in this note are:
    first-order location `7n/16` and variance asymptotic to `3n/64`.
 4. A consequence for the **full uniform measure on `Sub(S_n)`**:
 
-   \[
+   $$
    \Pr(H\text{ is elementary abelian of exponent }2)
        \leq 2^{-n/2+O(\sqrt n)}.
-   \]
+   $$
 
 5. The explicit lower bound
 
-   \[
+   $$
    \log_2|\operatorname{Sub}(S_n)|
       \geq \frac{n^2}{16}+\frac34n\log_2n-O(n).
-   \]
+   $$
 
 The unresolved step is to control subgroups outside `F_n`. No assertion
 that `F_n` contains almost all subgroups is made or used. In particular,
@@ -67,56 +67,56 @@ uniform unrestricted subgroup of `S_n`.
 
 Put
 
-\[
+$$
 \delta=n\bmod 2,\qquad N=n-\delta,\qquad m=N/2.
-\]
+$$
 
 Write
 
-\[
+$$
 {r\brack k}_2
 =\prod_{i=0}^{k-1}\frac{2^r-2^i}{2^k-2^i},
 \qquad S_r=\sum_{k=0}^r{r\brack k}_2.
-\]
+$$
 
 A Gaussian coefficient outside its valid range is zero. Define
 
-\[
+$$
 P_2=\prod_{i=1}^{\infty}(1-2^{-i})>0.
-\]
+$$
 
 Counting ordered independent vectors and dividing by the number of bases
 of a k-space proves that `{r choose k}_2` counts the k-dimensional
 subspaces of `F_2^r`. Its product formula gives
 
-\[
+$$
 2^{k(r-k)}\leq {r\brack k}_2
 \leq P_2^{-1}2^{k(r-k)}.                     \tag{2.1}
-\]
+$$
 
 Thus, with absolute positive constants,
 
-\[
+$$
 c\,2^{r^2/4}\leq S_r\leq C\,2^{r^2/4}.      \tag{2.2}
-\]
+$$
 
 For a uniform subspace `U` of `F_2^r`, its dimension `K` consequently
 satisfies `K-r/2=O_P(1)`, with a Gaussian upper bound on the discrete tails.
 More precisely, along either fixed parity of r,
 
-\[
+$$
 \Pr(K-r/2=j)\longrightarrow
 \frac{2^{-j^2}}{\Theta_\varepsilon},\qquad
 \Theta_\varepsilon=\sum_{t\in\mathbb Z+\varepsilon}2^{-t^2},
                                                         \tag{2.3}
-\]
+$$
 
 where `epsilon=0` for even r and `epsilon=1/2` for odd r, and j belongs
 to that lattice. Also
 
-\[
+$$
 S_r\sim P_2^{-1}\Theta_\varepsilon 2^{r^2/4}. \tag{2.4}
-\]
+$$
 
 Indeed, for fixed j the product correction to
 `2^(r²/4-j²)` tends to `P_2^(-1)`. Equation (2.1) gives summable domination
@@ -126,21 +126,21 @@ by a constant times `2^(-j²)`, proving both assertions.
 
 For `a+2b=m`, let `s_(a,b,k)` count k-spaces in
 
-\[
+$$
 V=\mathbb F_2^a\times(\mathbb F_2^2)^b
-\]
+$$
 
 that project onto every displayed factor. Define coefficients by
 
-\[
+$$
 (1-x)^a(1-3x+2x^2)^b=\sum_{t=0}^m c_t x^t.
-\]
+$$
 
 Then the exact formula is
 
-\[
+$$
 s_{a,b,k}=\sum_{t=0}^m c_t{m-t\brack k}_2.   \tag{2.5}
-\]
+$$
 
 To prove this, invert on the product of the subspace lattices of the
 coordinate factors. A one-dimensional factor contributes the polynomial
@@ -152,18 +152,18 @@ An allowed product subspace of codimension t contains exactly
 There is also a useful uniform estimate. For a uniform k-space, the
 probability of lying in a specified hyperplane is
 
-\[
+$$
 \frac{{m-1\brack k}_2}{{m\brack k}_2}
 =\frac{2^{m-k}-1}{2^m-1}\leq 2^{1-k}.
-\]
+$$
 
 Failure of surjectivity is contained in a union of `a+3b` such events.
 Since this number is at most n, (2.1) and a split at `k=m/4` give,
 uniformly in a and b,
 
-\[
+$$
 \sum_k s_{a,b,k}=S_m(1+O(n2^{-m/4})).        \tag{2.6}
-\]
+$$
 
 For the split, ranks below `m/4` have total probability
 `O(2^(-m²/16))`; ranks at least `m/4` have failure probability at most
@@ -175,19 +175,19 @@ whole distribution by `O(n2^(-m/4))` in total variation.
 Let `E_n` be the set of all elementary abelian 2-subgroups of `S_n`,
 including the trivial group. For fixed `w>0`, put
 
-\[
+$$
 A_N(w)=[z^N]\exp(z^2/2+wz^4/24),
 \qquad C_n(w)=\frac{n!}{\delta!}A_N(w).
                                                         \tag{3.1}
-\]
+$$
 
 ### Theorem A
 
 As n tends to infinity,
 
-\[
+$$
 |E_n|=C_n(1)S_m\bigl(1+O(n^4 2^{-m/4})\bigr).             \tag{3.2}
-\]
+$$
 
 With probability tending to one, a uniform member of `E_n` has exactly
 delta fixed points and every other orbit has size two or four. Its order
@@ -209,15 +209,15 @@ There is one regular `C_2` on a specified two-element block, and one regular
 singletons, a pairs and b four-element blocks, with `a+2b=m`, the ambient
 rank is m and the number of labelled partitions is
 
-\[
+$$
 L_{n,a,b}=\frac{n!}{\delta!2^a a!24^b b!}.                \tag{3.3}
-\]
+$$
 
 Thus the exact rank-k count for this part of `E_n` is
 
-\[
+$$
 \sum_{a+2b=m} L_{n,a,b}s_{a,b,k}.                         \tag{3.4}
-\]
+$$
 
 Equations (2.6) and (3.1) give the claimed main term. They also show that
 the rank distribution of this part differs from that of a uniform
@@ -228,24 +228,24 @@ subspace of `F_2^m` by `o(1)` in total variation.
 Suppose H has f fixed points and `a_d` orbits of size `2^d`, for `d>=1`.
 The rank of its uniquely determined ambient product is
 
-\[
+$$
 r=\sum_{d\geq1}d a_d.
-\]
+$$
 
 Write `f=delta+2t`. Since `d<=2^(d-1)`, the rank deficit is
 
-\[
+$$
 D=m-r=t+\sum_{d\geq3}(2^{d-1}-d)a_d.                    \tag{3.5}
-\]
+$$
 
 The excluded profiles have `D>=1`.
 
 On a block of size `2^d`, the number of regular elementary abelian
 subgroups is
 
-\[
+$$
 \frac{(2^d)!}{2^d|\operatorname{GL}(d,2)|}.              \tag{3.6}
-\]
+$$
 
 For completeness, all regular embeddings are conjugate. Their normalizer
 consists of affine maps `x -> v+g(x)`, so has the denominator's order.
@@ -254,34 +254,34 @@ This proves (3.6).
 Fix the bad data t and `(a_d)_(d>=3)` and sum over the remaining two- and
 four-point blocks. Put
 
-\[
+$$
 B=2t+\sum_{d\geq3}2^d a_d.
-\]
+$$
 
 The number of possible ambient products is
 
-\[
+$$
 \frac{n!}{(\delta+2t)!}
 \prod_{d\geq3}\frac{1}{a_d!\,(2^d|\operatorname{GL}(d,2)|)^{a_d}}
 \ A_{N-B}(1).                                          \tag{3.7}
-\]
+$$
 
 Here `B<=8D`, because `2^d<=8(2^(d-1)-d)` for every `d>=3`.
 If B is even, appending `B/2` pairs to each monomial configuration in
 `A_(N-B)(1)` injects these configurations into those of `A_N(1)`.
 The ratio of their weights is at most `n^(B/2)`. Hence
 
-\[
+$$
 A_{N-B}(1)/A_N(1)\leq n^{B/2}\leq n^{4D}.               \tag{3.8}
-\]
+$$
 
 Each such ambient product contributes at most `S_(m-D)` subgroups, and
 by (2.2), for `1<=D<=m`,
 
-\[
+$$
 \frac{S_{m-D}}{S_m}
  \leq C2^{-D(2m-D)/4}\leq C2^{-mD/4}.                  \tag{3.9}
-\]
+$$
 
 There are at most `4^D` bad data of a given deficit D. To see this, the
 weights `2^(d-1)-d` for `d>=3` are the distinct integers `1,4,11,...`.
@@ -294,10 +294,10 @@ Divide the total bad count by `C_n(1)S_m`. All omitted factorial and
 normalizer factors in (3.7) are at most one, so (3.8)-(3.9) bound this
 ratio by
 
-\[
+$$
 C\sum_{D=1}^m\bigl(4n^4 2^{-m/4}\bigr)^D
    =O(n^4 2^{-m/4}).                                    \tag{3.10}
-\]
+$$
 
 This is a convergent geometric bound for all sufficiently large n.
 Together with (3.4) and (2.6), it proves (3.2), the orbit claim, and the
@@ -318,16 +318,16 @@ For an orbit partition as in (3.3), assign:
 Let D be the direct product of the assigned permutation groups. Its
 abelianization is
 
-\[
+$$
 \pi:D\longrightarrow D/D'\cong
 \mathbb F_2^a\times(\mathbb F_2^2)^b.
-\]
+$$
 
 For every subspace U projecting onto every displayed factor, include
 
-\[
+$$
 H=\pi^{-1}(U)
-\]
+$$
 
 in `F_n`. Equivalently, `F_n` consists of the subgroups with exactly
 delta fixed points, the displayed orbit projections, and which contain
@@ -341,27 +341,27 @@ Thus all the stipulated blocks really are H-orbits.
 
 If d of the b four-point projections are dihedral, then
 
-\[
+$$
 |D'|=2^d,\qquad \log_2|H|=\dim U+d.                    \tag{4.1}
-\]
+$$
 
 ### Theorem B
 
 The exact order-generating polynomial for `F_n` is
 
-\[
+$$
 \boxed{
 \sum_{H\in F_n} y^{\log_2|H|}
  =\sum_{a+2b=m} L_{n,a,b}(1+3y)^b
        \sum_{k=0}^m s_{a,b,k}y^k.
 }                                                       \tag{4.2}
-\]
+$$
 
 In particular,
 
-\[
+$$
 |F_n|=C_n(4)S_m(1+O(n2^{-m/4})).                         \tag{4.3}
-\]
+$$
 
 #### Proof
 
@@ -374,9 +374,9 @@ four-element blocks. This gives (4.3). QED.
 
 For example, the exact polynomial for `F_4` is
 
-\[
+$$
 3y+4y^2+3y^3.
-\]
+$$
 
 The three order-two groups are generated by the double transpositions;
 the four order-four groups are the four Klein-four subgroups; and the
@@ -388,20 +388,20 @@ three order-eight groups are the Sylow 2-subgroups of `S_4`.
 
 If H is uniform in `F_n`, then
 
-\[
+$$
 \frac{\log_2|H|}{n}\xrightarrow{\Pr}\frac7{16},          \tag{5.1}
-\]
+$$
 
 and the following more precise limit holds:
 
-\[
+$$
 \boxed{
 \frac{\log_2|H|-\frac{7N}{16}
            +\frac38\sqrt{\frac{3N}{8}}}
       {\sqrt{3N/64}}
 \ \Longrightarrow\ \mathcal N(0,1).
 }                                                       \tag{5.2}
-\]
+$$
 
 Moreover, `Var(log_2 |H|) = 3N/64 + O(sqrt(N))`.
 
@@ -417,17 +417,17 @@ construction by `o(1)` in total variation, and yields uniform `F_n`.
 More generally, under weights `L_(n,a,b) w^b`, the probability of a pair
 count a is proportional to
 
-\[
+$$
 T_w(a)=\frac{w^{(m-a)/2}}
  {2^a a!24^{(m-a)/2}((m-a)/2)!},\qquad a\equiv m\pmod2.
-\]
+$$
 
 The consecutive ratio is
 
-\[
+$$
 \frac{T_w(a+2)}{T_w(a)}
  =\frac{3(m-a)}{w(a+1)(a+2)}.                           \tag{5.3}
-\]
+$$
 
 It is decreasing in a. For every fixed eta>0, it is bounded above by a
 constant strictly less than one when
@@ -442,16 +442,16 @@ bounded away from one. The more distant tail is a geometric sum;
 on the finite lower tail an additional factor `O(sqrt(N))` suffices.
 Its probability tends to zero. Thus
 
-\[
+$$
 \frac a{\sqrt N}\xrightarrow{\Pr}\sqrt{\frac3{2w}}.
                                                         \tag{5.4}
-\]
+$$
 
 For `w=4`, this gives `a/sqrt(N) -> sqrt(3/8)`, and
 
-\[
+$$
 b=N/4-a/2,\qquad b/N\xrightarrow{\Pr}1/4.              \tag{5.5}
-\]
+$$
 
 #### Proof: dihedral choices and subgroup order
 
@@ -460,17 +460,17 @@ dihedral count d is exactly `Binomial(b,3/4)`: each four-point block has
 one Klein-four choice and three dihedral choices. These choices are
 independent of U. Meanwhile, by (2.3) and (2.6),
 
-\[
+$$
 K=\dim U=m/2+O_{\Pr}(1).
-\]
+$$
 
 Conditional binomial characteristic functions, together with (5.5),
 give
 
-\[
+$$
 \frac{d-3b/4}{\sqrt{3N/64}}\Longrightarrow\mathcal N(0,1).
                                                         \tag{5.6}
-\]
+$$
 
 One can see this directly by expanding the characteristic function of
 each centered Bernoulli variable: its logarithm is
@@ -480,11 +480,11 @@ The error is `O(N^(-1/2))`, uniformly for `b<=N/4`.
 
 Finally, (4.1) gives
 
-\[
+$$
 \log_2|H|
  =\frac{7N}{16}-\frac{3a}{8}
    +(d-3b/4)+(K-m/2).
-\]
+$$
 
 Replace a by `sqrt(3N/8)` at an `o_P(sqrt(N))` cost using (5.4).
 The rank term is `o_P(sqrt(N))`. Equation (5.6) proves (5.2), and
@@ -509,11 +509,11 @@ Equation (2.1) and the uniformly positive acceptance probability also
 give `E[(K-m/2)^2]=O(1)`. Conditional on a and K, d has variance
 `3b/16` and mean `3b/4`. The law of total variance consequently gives
 
-\[
+$$
 \operatorname{Var}(K+d)
 =\frac3{16}\mathbb E[b]+\operatorname{Var}(K-3a/8)
 =\frac{3N}{64}+O(\sqrt N),
-\]
+$$
 
 where the covariance term is bounded by Cauchy-Schwarz. This proves
 the additional moment assertion.
@@ -529,43 +529,43 @@ Write `m=2q+e`, where `e` is zero or one. In the coefficient `A_N(w)`,
 the possible pairs of counts are `a=e+2j`, `b=q-j`. If `T_0` is the
 term with j zero, then
 
-\[
+$$
 T_0=\frac{w^q}{2^e e!24^q q!},\qquad
 \frac{T_j}{T_0}
   =\left(\frac6w\right)^j\frac{(q)_j e!}{(e+2j)!}.
-\]
+$$
 
 Since `(q)_j<=q^j`,
 
-\[
+$$
 1\leq\frac{A_N(w)}{T_0}
  \leq \sum_{j\geq0}\frac{(6q/w)^j}{(2j)!}
  \leq \exp(\sqrt{6q/w}).                               \tag{6.1}
-\]
+$$
 
 For each fixed positive w, this proves
 
-\[
+$$
 \log A_N(w)=\log\!\left(\frac{w^q}{2^e e!24^q q!}\right)
              +O(\sqrt N),                              \tag{6.2}
-\]
+$$
 
 with natural logarithms in this display. In particular,
 
-\[
+$$
 \log_2\frac{A_N(1)}{A_N(4)}=-\frac N2+O(\sqrt N).       \tag{6.3}
-\]
+$$
 
 ### Corollary D: a global exclusion theorem
 
 For uniform H in `Sub(S_n)`,
 
-\[
+$$
 \Pr(H\in E_n)
  \leq\frac{|E_n|}{|F_n|}
  =2^{-N/2+O(\sqrt N)}
  =2^{-n/2+O(\sqrt n)}.                                 \tag{6.4}
-\]
+$$
 
 Proof: apply (3.2), (4.3), and (6.3). QED.
 
@@ -576,9 +576,9 @@ has degree `p^d` and rank d, with `d/p^d<=1/p`. Its total ambient rank
 is therefore at most `n/p`. The Gaussian estimate over `F_p`, proved
 as in (2.1), bounds its subgroup count by
 
-\[
+$$
 O(n) p^{n^2/(4p^2)}.
-\]
+$$
 
 For a fixed orbit profile, the number of ambient products is at most n!:
 use the analogue of (3.6), whose factorials cancel the labelled block
@@ -586,9 +586,9 @@ denominators. There are at most `2^n` profiles and at most n primes.
 Since `(log_2 p)/p²` decreases for `p>=3`, the total number for odd primes
 is at most
 
-\[
+$$
 2^{(\log_2 3)n^2/36+O(n\log n)}.
-\]
+$$
 
 This is smaller than `|F_n|` by a quadratic exponential factor, so does
 not change (6.4). The common trivial subgroup causes harmless overcounting.
@@ -597,17 +597,17 @@ not change (6.4). The common trivial subgroup causes harmless overcounting.
 
 Equations (2.2), (4.3), (6.2), and Stirling's formula yield
 
-\[
+$$
 \log_2|F_n|
  =\frac{n^2}{16}+\frac34n\log_2n+O(n).                 \tag{6.5}
-\]
+$$
 
 Since `F_n` is contained in `Sub(S_n)`, this proves
 
-\[
+$$
 \log_2|\operatorname{Sub}(S_n)|
  \geq\frac{n^2}{16}+\frac34n\log_2n-O(n).
-\]
+$$
 
 The coefficient `3/4` comes from partitioning nearly all points into
 four-element blocks: the label count is of size `n!/(4!^(n/4)(n/4)!)`.
@@ -616,19 +616,19 @@ counts differ by an exponential factor of order `2^(n/2)`.
 
 ## 7. Exact independent checks
 
-The accompanying `verify.py` uses only the Python standard library.
+The accompanying [verify.py](verify.py) uses only the Python standard library.
 It computes (2.5) and (4.2) with exact integers. The output is saved in
-`verification.json`.
+[verification.json](verification.json).
 
 There is also an independent exact enumeration of all `E_n` by rank.
 Let `h_j(n)` count homomorphisms from `C_2^j` to `S_n`. Looking at the
 orbit of the label 1 gives
 
-\[
+$$
 h_j(0)=1,\qquad
 h_j(n)=\sum_{\substack{0\leq d\leq j\\2^d\leq n}}
  \frac{(n-1)!}{(n-2^d)!}{j\brack d}_2 h_j(n-2^d).       \tag{7.1}
-\]
+$$
 
 There are `{j choose d}_2` kernels for a transitive action on `2^d`
 points, and `(2^d-1)!` labelings for each kernel on a chosen block.
@@ -637,11 +637,11 @@ This explains every factor in (7.1).
 Möbius inversion on the common kernel of the entire action then gives
 the exact number of elementary rank-k subgroups:
 
-\[
+$$
 \frac{1}{|\operatorname{GL}(k,2)|}
  \sum_{j=0}^k{k\brack j}_2
  (-1)^{k-j}2^{\binom{k-j}{2}}h_j(n).                    \tag{7.2}
-\]
+$$
 
 The division is by the number of isomorphisms onto a fixed image.
 

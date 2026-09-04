@@ -1,7 +1,12 @@
 # Fresh publication-facing check
 
+> This is an AI-agent proof review, not independent human peer review.
+
 4 September 2026. This is an additional adverse check after the
 earlier independent audits.
+
+> Historical audit of the earlier single-order construction. The submitted
+> interval result is reviewed in [audit_order_spectrum.md](audit_order_spectrum.md).
 
 ## Mathematical conclusions
 
@@ -10,59 +15,59 @@ the potentially vulnerable points rather than relying on the finite
 verification script:
 
 - The Birkhoff exponent is exactly
-  \(\sum_j s_j(r_j-s_j)\); the Sylow components multiply.
+  $\sum_j s_j(r_j-s_j)$; the Sylow components multiply.
 - The defect inequalities include odd degree with no fixed point.
   In that case the necessary odd orbit supplies the missing loss.
 - The ambient product is recovered from the actual orbit projections.
   The profile count and coefficient ratio therefore do not omit
   embeddings or require an unjustified injectivity assumption.
 - The final exceptional-profile bound is a geometric series with ratio
-  \((Cn)^{34}2^{-\lfloor n/2\rfloor/128}\), which is exponentially
+  $(Cn)^{34}2^{-\lfloor n/2\rfloor/128}$, which is exponentially
   small eventually. The unspecified absolute positive exponent
   constant is justified.
 - The saddle evaluation retains the lattice factor and gives the
-  stated constant \(e^{-3/4}\); the parity-dependent theta factor
+  stated constant $e^{-3/4}$; the parity-dependent theta factor
   in the Gaussian sum is necessary and correctly included.
 
 The resulting formula remains
-\[
+$$
 |\operatorname{Ab}_n|
 =n![z^{n-\delta}]\exp(z^2/2+z^4/24)\,
 S_{\lfloor n/2\rfloor}(1+O(2^{-cn})),
 \qquad \delta=n\bmod2.
-\]
-Here \(\delta!=1\), so its omission in this display changes nothing.
+$$
+Here $\delta!=1$, so its omission in this display changes nothing.
 
-**The \(7/8\) lower bound:** verified by a new, simpler proof that does
+**The $7/8$ lower bound:** verified by a new, simpler proof that does
 not depend on any saddle estimate, relative enumeration theorem,
-normalizer count, or typical-saturation argument. This proof is in
-website_note_draft.md.
+normalizer count, or typical-saturation argument. That earlier draft was subsequently replaced by the stronger
+[submitted interval proof](proof.md).
 
 In fact it proves the finite lower bound
-\[
+$$
 \#\{H\leq S_n:|H|=2^{j_n}\}
 \geq
 \frac{n!}{(8!)^t t!\,2^a a!\,\delta!}
 {r-4\brack \lfloor(r-4)/2\rfloor}_2
 \quad(n\geq8),
-\]
-where \(n=8t+2a+\delta\), \(0\leq a\leq3\),
-\(r=\lfloor n/2\rfloor\), and
-\(j_n=\lfloor n/8\rfloor+\lfloor n/4\rfloor+2\).
+$$
+where $n=8t+2a+\delta$, $0\leq a\leq3$,
+$r=\lfloor n/2\rfloor$, and
+$j_n=\lfloor n/8\rfloor+\lfloor n/4\rfloor+2$.
 Every counted subgroup has exactly this order and is of class at most
 two and exponent dividing four. This strengthens the stated lower
 bound to an order-refined version at a single explicit order.
 
-The arbitrary deterministic choice of one \(E\) on each labelled
+The arbitrary deterministic choice of one $E$ on each labelled
 eight-point block is sufficient. Since the resulting group recovers
 its orbit partition, different partitions cannot produce duplicate
 subgroups. There is no need to claim that 105 embeddings are counted.
 
 Combining the abelian count with this elementary lower bound gives
-\[
+$$
 \Pr_{H\in\operatorname{Sub}(S_n)}(H\text{ abelian})
 \leq2^{-(n/8)\log_2n+O(n)}.
-\]
+$$
 This is an unrestricted probability bound; the available order CLTs
 remain restricted to their stated projection classes.
 
@@ -82,7 +87,7 @@ I directly inspected the full proof of Proposition 7.3 in
 [Roney-Dougal–Tracey, arXiv:2503.05416](https://arxiv.org/html/2503.05416v1).
 Its lower-bound construction uses disjoint prime-order cycles and
 middle-dimensional subdirect products. I did not find the
-extraspecial construction or an explicit \(7/8\) coefficient in that
+extraspecial construction or an explicit $7/8$ coefficient in that
 accessible text. This observation does not establish novelty.
 
 A prior public note dated 11 August 2026,

@@ -1,6 +1,6 @@
 """Compute degree-eight transitive 2-group data using installed Sage/GAP.
 
-Run: sage -python research/erdos1163/classify_degree8.py
+Run: sage -python erdos1163/classify_degree8.py
 This finite table guides proofs; it is not an asymptotic argument.
 """
 from sage.all import libgap

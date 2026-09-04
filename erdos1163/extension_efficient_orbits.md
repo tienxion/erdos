@@ -3,7 +3,7 @@
 Independent extension, 4 September 2026.
 
 Let `E` be the transitive plus-type extraspecial group of order 32 on
-eight points constructed in `progress_v3.md`. Its center and derived
+eight points constructed in [progress_v3.md](progress_v3.md). Its center and derived
 group coincide and have order two; `E/E'` has binary rank four. On a
 specified eight-point block its conjugacy class has 105 members, as
 proved in that note.
@@ -14,14 +14,14 @@ four-point orbit; and one of these groups `E` on each eight-point orbit.
 Any number of fixed points is allowed. **No condition is imposed on
 containment of the supported derived subgroups.**
 
-Let `Q_n` be the saturated family from `progress_v3.md`, with exactly
+Let `Q_n` be the saturated family from [progress_v3.md](progress_v3.md), with exactly
 `delta=n mod 2` fixed points and with every supported orbit derived
 subgroup contained in `H`. Then there is an absolute constant `eta>0`
 such that
 
-\[
+$$
  |J_n\setminus Q_n|/|Q_n|=O(2^{-\eta n}).              \tag{1}
-\]
+$$
 
 Thus all enumeration and order limit theorems already proved for
 `Q_n` hold for uniform sampling from the entire class `J_n`. In
@@ -39,9 +39,9 @@ exactly two ordered representations `XY` by independent linear forms.
 
 For `E`, its square form is the nonsingular plus form
 
-\[
+$$
  q_+(x_1,y_1,x_2,y_2)=x_1y_1+x_2y_2.                 \tag{2}
-\]
+$$
 
 This follows either from the central product of two `D_8` factors, or
 by finding a hyperbolic basis for the explicit square map of the
@@ -74,9 +74,9 @@ Fix a partition with `a` pair blocks, `b` four-point blocks, and `c`
 eight-point blocks, and suppose exactly `d` four-point projections are
 dihedral. Put
 
-\[
+$$
  r=a+2b+4c,\qquad z=d+c.
-\]
+$$
 
 The ambient product `D` has elementary abelian derived group `Z=D'` of
 rank z, and `D/Z` is binary of rank r. The square map is the vector of
@@ -84,7 +84,7 @@ rank z, and `D/Z` is binary of rank r. The square map is the vector of
 above. For a subdirect subgroup, let `U=HZ/Z`, `dim U=k`, and
 `W=H intersect Z`, `codim_Z W=t`.
 
-Exactly as in §1 of `extension_small_orbits.md`, for fixed `(U,W)` the
+Exactly as in §1 of [extension_small_orbits.md](extension_small_orbits.md), for fixed `(U,W)` the
 number of subgroups is `2^(kt)` if `q(U) subset W`, and zero otherwise.
 That parametrization applies because the ambient product has exponent
 four, nilpotency class at most two, and central derived group of
@@ -99,9 +99,9 @@ unrestricted coordinate count would have been either `2^(2k)` or
 weakens the upper bound. Therefore the count of all full-rank coordinate
 matrices with deficiency h is at most
 
-\[
+$$
  2^{kr}\binom zh72^h2^{-h(2k-z+h)}.                  \tag{3}
-\]
+$$
 
 Dropping full-rank and other projection conditions in obtaining this
 bound is harmless; independence of each dihedral or extraspecial
@@ -112,17 +112,17 @@ the span of the square values. Divide (3) by `|GL(k,2)|`, multiply by
 `2^(kt)`, and use the Gaussian bound. Put `h=t+u` and `j=k-r/2`. The
 exponent of two apart from `binom(z,h)72^h` is exactly
 
-\[
+$$
  \frac{r^2}{4}-(j+t/2+u)^2-\frac{3t^2}{4}
              -t(r/2-z)-u(r-z).                       \tag{4}
-\]
+$$
 
 Here `z<=r/2`. Consequently summing over k and u gives the bound
 
-\[
+$$
  C S_r\sum_{t\geq1}(72z)^t
           2^{-3t^2/4-t(r/2-z)}                       \tag{5}
-\]
+$$
 
 for nonsaturated subgroups of one ambient product. Indeed the k-sum
 of the first negative square is bounded, and the u-sum is geometric
@@ -136,19 +136,19 @@ The number of ambient projection choices for the fixed partition is
 `4^b 105^c S_r`. Bounding `72z` by `72r`, the relative nonsaturated
 count is at most
 
-\[
+$$
  C\sum_{t\geq1}(72r)^t2^{-3t^2/4}
        2^{-t(a/2+c)}
        \left(\frac{3+2^{-t}}4\right)^b.              \tag{6}
-\]
+$$
 
 For `t>=1`, the last factors are at most `2^(-a/2-c)(7/8)^b`.
 Writing `beta=log_2(8/7)`,
 
-\[
+$$
  a/2+c+\beta b\geq (\beta/2)(a+2b+4c)
                        =\beta r/2.
-\]
+$$
 
 The sum of the remaining factors is `2^(O(log^2(r+2)))`. Thus (6)
 is `O(2^(-eta_1 r))` uniformly over all orbit profiles. As usual, the
@@ -156,9 +156,9 @@ subspaces failing to be onto one of the quotient factors contribute
 only `O(r2^(-r/4))` of `S_r` by the hyperplane union bound. Therefore,
 for this partition, **all** subdirect subgroups have count
 
-\[
+$$
  4^b105^c S_r(1+O(2^{-\eta_2r})),                     \tag{7}
-\]
+$$
 
 and the error relative to the saturated subdirect count is exponentially
 small. This proves the required uniform assertion before adding fixed
@@ -168,16 +168,16 @@ points.
 
 With `N=n-delta` and `m=N/2`, use the coefficient
 
-\[
+$$
  B_L=[z^L]\exp(z^2/2+z^4/6+z^8/384).
-\]
+$$
 
 If there are `delta+2s` fixed points, summing (7) over partitions gives
 the upper bound
 
-\[
+$$
  C\frac{n!}{(\delta+2s)!}B_{N-2s}S_{m-s}.
-\]
+$$
 
 Appending s pair blocks proves `B_(N-2s)/B_N<=n^s`; the Gaussian
 subspace estimate gives `S_(m-s)/S_m<=C2^(-ms/4)`. Thus all `s>=1`
@@ -195,4 +195,4 @@ Other transitive eight-point projection types remain outside the claim.
 
 The argument is self-contained given the explicit structure of E in
 the third note. Independent proof auditing is recorded separately in
-`audit_small_orbits.md` and its follow-up.
+[audit_small_orbits.md](audit_small_orbits.md) and its follow-up.
